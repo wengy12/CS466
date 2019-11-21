@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Assignment1 part 2</title>
+        <link rel="stylesheet" type="text/css" href="../shared/mystyle.css">
+    </head>
+
+    <body>
+        <div class="navbar">
+          <a href="index.html">Home</a>
+          <div class="dropdown">
+              <button class="dropbtn">Tutorials
+                  <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                  <a href="t1.html">Unit 1</a>
+                  <a href="t2.html">Unit 2</a>
+                  <a href="t3.html">Unit 3</a>
+              </div>
+          </div>
+          <div class="dropdown">
+                <button class="dropbtn">Quizes
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="q1.html">Unit 1</a>
+                    <a href="q2.html">Unit 2</a>
+                    <a href="q3.html">Unit 3</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="quiz"></div>
+        <button id="submit">Submit Quiz</button>
+        <div id="results"></div>
+
+
+        <form id="form" onsubmit="return false;">
+            <input type="text" id="question" />
+            <input type="text" id="answer_a" />
+            <input type="text" id="answer_b" />
+            <input type="text" id="answer_c" />
+            <input type="text" id="correct_answer" />
+            <input type="submit" onclick="othername();" />
+        </form>
+
+
+        <script src="../shared/myscripts.js"></script>
+        <script src="../shared/quiz1.js"></script>
+    </body>
+</html>

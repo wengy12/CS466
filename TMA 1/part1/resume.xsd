@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+           targetNamespace="https://www.w3schools.com" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- WE'll define basic types here -->
+<xs:element name="name" type="xs:string"/>
+<xs:element name="email" type="xs:string"/>
+<xs:element name="github" type="xs:string"/>
+<xs:element name="position" type="xs:string"/>
+<xs:element name="company" type="xs:string"/>
+<xs:element name="location" type="xs:string"/>
+<xs:element name="time_period" type="xs:string"/>
+
+<xs:element name="cventry">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="w3s:position" xmlns:w3s="https://www.w3schools.com"/>
+            <xs:element ref="w3s:company" xmlns:w3s="https://www.w3schools.com"/>
+            <xs:element ref="w3s:location" xmlns:w3s="https://www.w3schools.com"/>
+            <xs:element ref="w3s:time_period" xmlns:w3s="https://www.w3schools.com"/>
+            <xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="general">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="w3s:name" xmlns:w3s="https://www.w3schools.com"/>
+            <xs:element ref="w3s:email" xmlns:w3s="https://www.w3schools.com"/>
+            <xs:element ref="w3s:github" xmlns:w3s="https://www.w3schools.com"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="skill">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="w3s:name" xmlns:w3s="https://www.w3schools.com"/>
+            <xs:element name="list" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<!-- The actual type -->
+
+<xs:element name="resume">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="w3s:general" xmlns:w3s="https://www.w3schools.com"/>
+            <xs:element name="skills">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element ref="w3s:skill" minOccurs="0" maxOccurs="unbounded" xmlns:w3s="https://www.w3schools.com"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="education">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element ref="w3s:cventry" minOccurs="0" maxOccurs="unbounded" xmlns:w3s="https://www.w3schools.com"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="experience">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element ref="w3s:cventry" minOccurs="0" maxOccurs="unbounded" xmlns:w3s="https://www.w3schools.com"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+</xs:schema>

@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<resume
+        xmlns="https://www.w3schools.com"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://www.w3schools.com/xml resume.xsd">
+
+        <general>
+            <name>Yunbing Weng</name>
+            <email>wengyunbing@gmail.com</email>
+            <github>https://github.com/wengy12/</github>
+        </general>
+
+        <skills>
+            <skill>
+                <name>Languages</name>
+                <list>Russian (Native), Chinese(Native), English(Fluent)</list>
+            </skill>
+            <skill>
+                <name>Programming Languages</name>
+                <list>C++, Python, JS</list>
+            </skill>
+            <skill>
+                <name>Tools</name>
+                <list>Git, Latex, svn</list>
+            </skill>
+            <skill>
+                <name>Personal</name>
+                <list>Self-Motivated, Independent, Strong Work Ethic, Extremely fast learner, Event organization</list>
+            </skill>
+        </skills>
+
+        <education>
+            <cventry>
+                <position>B.S. in Computer Science</position>
+                <company>McMaster University</company>
+                <location>Hamilton, Canada</location>
+                <time_period>Sep. 2017 - PRESENT</time_period>
+            </cventry>
+            <cventry>
+                <position>B.S. in Mathematics and Mechanics</position>
+                <company>Moscow State University</company>
+                <location>Moscow, Russia</location>
+                <time_period>Sep. 2014 - Mar. 2016</time_period>
+            </cventry>
+        </education>
+
+        <experience>
+            <cventry>
+                <position>Game Editor/Translation, Market research</position>
+                <company>Luden.io</company>
+                <location>Moscow, Russia</location>
+                <time_period>May 2019 - Now</time_period>
+                <description>Editor and translation for game "while True: learn()" based on Unity3D</description>
+                <description>Market research and communication with Chinese partners</description>
+            </cventry>
+            <cventry>
+                <position>Warehouse worker</position>
+                <company>Amazon</company>
+                <location>Milton, Ontario, Canada</location>
+                <time_period>Sep 2017 - Nov 2017</time_period>
+                <description>Warehouse packer.</description>
+            </cventry>
+        </experience>
+
+</resume>

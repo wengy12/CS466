@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Tutorial for Unit 1</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" type="text/css" href="../shared/mystyle.css">
+
+    </head>
+
+    <body>
+        <div class="navbar">
+          <a href="index.html">Home</a>
+          <div class="dropdown">
+              <button class="dropbtn">Tutorials
+                  <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                  <a href="t1.html">Unit 1</a>
+                  <a href="t2.html">Unit 2</a>
+                  <a href="t3.html">Unit 3</a>
+              </div>
+          </div>
+          <div class="dropdown">
+                <button class="dropbtn">Quizes
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="q1.html">Unit 1</a>
+                    <a href="q2.html">Unit 2</a>
+                    <a href="q3.html">Unit 3</a>
+                </div>
+            </div>
+        </div>
+        <h1>Unit 1 - HTML & CSS</h1>
+        <div class="general">
+
+            <h2><a id="toc">Table of content</h2>
+            <ul>
+                <li><a href="#html1">HTML page-structure elements</a></li>
+                <li><a href="#html2">HTML Input Types</a></li>
+                <li><a href="#css1">CSS basics</a></li>
+            </ul>
+
+            <h2><a id="html1"></a>HTML page-structure elements</h2>
+            <div class="tutorial-content">
+                <p>HTML5 provides a whole new way to structure page content.
+                    The impact of this aspect of HTML5 is less dramatic,
+                    at least on the user end. The biggest impact of new HTML5
+                    page structuring tags is on designers. The following elements
+                    are the key HTML5 elements used to organize page content</p>
+                <button type="button" class="collapsible">Example</button>
+                <div class="tutorial-example" >
+                    <div class="w3-code htmlHigh notranslate">
+                        &lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>
+                        &lt;!this is just a comment, user will not see it&gt;<br>
+                        &lt;title&gt;HTML Tutorial 1&lt;/title&gt;<br>
+                        &lt;body&gt;<br><br>
+                        &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+                        &lt;h2&gt;This is also a heading&lt;/h2&gt;<br>
+                        &lt;h6&gt;And even this is a heading&lt;/h6&gt;<br>
+                        &lt;ul&gt;&lt;!This is a unordered list&gt;<br>
+                        &lt;li&gt;List elenent 1&lt;/li&gt;<br>
+                        &lt;li&gt;&lt;a href="index.html"&gt;This is a list element and also is a hiberlink to home page&lt;/a&gt;&lt;/li&gt;<br>
+                        &lt;/ul&gt;<br><br>
+                        &lt;ol&gt;&lt;!This is a ordered list&gt;<br>
+                        &lt;li&gt;List elenent 1&lt;/li&gt;<br>
+                        &lt;li&gt;&lt;a href="index.html"&gt;This is a list element and also is a hiberlink to home page&lt;/a&gt;&lt;/li&gt;<br>
+                        &lt;/ol&gt;<br><br>
+                        &lt;nav&gt;<br>
+                        &lt;a href="index.html"&gt;link to home page&lt;/a&gt; |
+                        &lt;a href="q1.html">link to quiz&lt;/a&gt;<br>
+                        &lt;/nav&gt;<br><br>
+                        &lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;
+                    </div>
+                    <p>Now we can see produced result in this block</p>
+                    <div class="w3-code htmlHigh notranslate">
+                        <h1 class="nocolor">This is a heading</h1>
+                        <h2>This is also a heading</h2>
+                        <h6>And even this is a heading</h6>
+                        <ul><!This is a unordered list>
+                        <li>List elenent 1</li>
+                        <li><a href="index.html">This is a list element and also is a hiberlink to home page</a></li>
+                        </ul>
+
+                        <ol><!This is a ordered list>
+                        <li>List elenent 1</li>
+                        <li><a href="index.html">This is a list element and also is a hiberlink to home page</a></li>
+                        </ol>
+
+                        <nav>
+                        <a href="index.html">link to home page</a> | <a href="q1.html">link to quiz</a>
+                        </nav>
+
+                        <p>This is a paragraph.</p>
+                    </div>
+                </div>
+                <nav>
+                    <a href="#toc">Go to Table of content</a>
+                </nav>
+            </div>
+
+            <h2><a id="html2"></a>HTML Input Types</h2>
+                <p>here are list of all the input types in HTML5, but we'll look in examples only few of them</p>
+                <ul>
+                    <li><a href="#button">button</a></li>
+                    <li><a href="#checkbox">checkbox</a></li>
+                    <li>color</li>
+                    <li>date</li>
+                    <li>datetime-local</li>
+                    <li>email</li>
+                    <li><a href="#file">file</a></li>
+                    <li>hidden</li>
+                    <li>image</li>
+                    <li>month</li>
+                    <li>number</li>
+                    <li><a href="#password">password</a></li>
+                    <li><a href="#radio">radio</a></li>
+                    <li>range</li>
+                    <li>reset</li>
+                    <li>search</li>
+                    <li>submit</li>
+                    <li>tel</li>
+                    <li><a href="#text">text</a></li>
+                    <li>time</li>
+                    <li>url</li>
+                    <li>week</li>
+                </ul>
+                <hr>
+                <p><a id="text"></a>&lt;input type="text"&gt; defines a <b>one-line text input field</b>:</p>
+                <button type="button" class="collapsible">Example</button>
+                <div class="tutorial-example">
+                    <div class="w3-code htmlHigh notranslate">
+                        &lt;form&gt;<br>
+                        &nbsp;&nbsp;&lt;p&gt;First name:&lt;/p&gt;&lt;br&gt;<br>
+                        &nbsp;&nbsp;&lt;input type="text" name="firstname"&gt;&lt;br&gt;<br>
+                        &nbsp;&nbsp;&lt;p&gt;Last name:&lt;/p&gt;&lt;br&gt;<br>
+                        &nbsp;&nbsp;&lt;input type="text" name="lastname"<br>
+                        &lt;/form&gt;
+                    </div>
+                    <p>Now we can see produced result in this block</p>
+                    <div class="w3-code htmlHigh notranslate">
+                        <form>
+                          First name:<br>
+                          <input type="text" name="firstname"><br>
+                          Last name:<br>
+                          <input type="text" name="lastname">
+                        </form>
+                    </div>
+                </div>
+
+                <hr>
+                <p><a id="password"></a>&lt;input type="password"&gt; defines a <b>password field</b>:</p>
+                <button type="button" class="collapsible">Example</button>
+                <div class="tutorial-example">
+                    <div class="w3-code htmlHigh notranslate">
+                        &lt;form&gt;<br>
+                        &nbsp;&nbsp;&lt;p&gt;User name:&lt;/p&gt;&lt;br&gt;<br>
+                        &nbsp;&nbsp;&lt;input type="text" name="username"&gt;&lt;br&gt;<br>
+                        &nbsp;&nbsp;&lt;p&gt;Password:&lt;/p&gt;&lt;br&gt;<br>
+                        &nbsp;&nbsp;&lt;input type="password" name="psw"<br>
+                        &lt;/form&gt;
+                    </div>
+                    <p>Now we can see produced result in this block</p>
+                    <div class="w3-code htmlHigh notranslate">
+                        <form>
+                          User name:<br>
+                          <input type="text" name="username"><br>
+                          Password:<br>
+                          <input type="password" name="psw">
+                        </form>
+                    </div>
+                </div>
+
+                <hr>
+                <p><a id="radio"></a>&lt;input type="radio"&gt; defines a <b>radio button</b>:</p>
+                <p>Radio buttons let a user select <b>ONLY ONE</b> of a limited number of choices</p>
+                <button type="button" class="collapsible">Example</button>
+                <div class="tutorial-example">
+                    <div class="w3-code htmlHigh notranslate">
+                        &lt;form&gt;<br>
+                        &nbsp;&nbsp;&lt;input type="radio" name="gender" value="male" checked&gt;&lt;br&gt;<br>
+                        &nbsp;&nbsp;&lt;input type="radio" name="gender" value="female"&gt;&lt;br&gt;<br>
+                        &nbsp;&nbsp;&lt;input type="radio" name="gender" value="other"&gt;&lt;br&gt;<br>
+                        &lt;/form&gt;
+                    </div>
+                    <p>Now we can see produced result in this block</p>
+                    <div class="w3-code htmlHigh notranslate">
+                        <form>
+                          <input type="radio" name="gender" value="male" checked> Male<br>
+                          <input type="radio" name="gender" value="female"> Female<br>
+                          <input type="radio" name="gender" value="other"> Other
+                        </form>
+                    </div>
+                </div>
+
+                <hr>
+                <p><a id="checkbox"></a>&lt;input type="checkbox"&gt; defines a <b>checkbox</b>:</p>
+                <p>Checkboxes let a user select <b>ZERO or MORE</b> options of a limited number of choices.</p>
+                <button type="button" class="collapsible">Example</button>
+                <div class="tutorial-example">
+                    <div class="w3-code htmlHigh notranslate">
+                        &lt;form&gt;<br>
+                        &nbsp;&nbsp;&lt;input type="checkbox" name="vehicle1" value="Plane"&gt; I have a plane&lt;br&gt;<br>
+                        &nbsp;&nbsp;&lt;input type="checkbox" name="vehicle2" value="Spaceship"&gt; I have a spaceship&lt;br&gt;<br>
+                        &lt;/form&gt;
+                    </div>
+                    <p>Now we can see produced result in this block</p>
+                    <div class="w3-code htmlHigh notranslate">
+                        <form>
+                          <input type="checkbox" name="vehicle1" value="Plane"> I have a plane<br>
+                          <input type="checkbox" name="vehicle2" value="Spaceship"> I have a spaceship
+                        </form>
+                    </div>
+                </div>
+
+                <hr>
+                <p><a id="button"></a>&lt;input type="button"&gt; defines a <b>button</b>:</p>
+                <button type="button" class="collapsible">Example</button>
+                <div class="tutorial-example">
+                    <div class="w3-code htmlHigh notranslate">
+                        &lt;input type="button" onclick="alert('Hello World!')" value="Click Me!"&gt;
+                    </div>
+                    <p>Now we can see produced result in this block</p>
+                    <div class="w3-code htmlHigh notranslate">
+                        <input type="button" onclick="alert('Hello World!')" value="Click Me!">
+                    </div>
+                </div>
+
+                <hr>
+                <p><a id="file"></a>&lt;input type="file"&gt; defines a file-select field and a "Browse" button for file uploads.</p>
+                <button type="button" class="collapsible">Example</button>
+                <div class="tutorial-example">
+                    <div class="w3-code htmlHigh notranslate">
+                        &lt;form&gt;<br>
+                        &nbsp;&nbsp;Select a file: &lt;input type="file" name="myFile"&gt;<br>
+                        &lt;/form&gt;
+                    </div>
+                    <p>Now we can see produced result in this block</p>
+                    <div class="w3-code htmlHigh notranslate">
+                        <form>
+                            Select a file: <input type="file" name="myFile">
+                        </form>
+                    </div>
+                </div>
+
+                <nav>
+                    <a href="#toc">Go to Table of content</a>
+                </nav>
+
+                <h2><a id="css1"></a>CSS basics</h2>
+                <p>A CSS rule-set consists of a selector and a declaration block:</p>
+                <img src="../shared/selector.gif" alt="something is going wrong"/>
+                <p>So let's have some cheatsheet about properties that we can use</p>
+                <div class="e1">
+                    <p>background-color: orange;</p>
+                </div>
+                <div class="e2">
+                    <p>color: orange;</p>
+                </div>
+                <div class="e3">
+                    <p>font-size: 3em;</p>
+                </div>
+                <div>
+                    <p>very intuitive picture to tell u where is "margin", "border" and "padding"</p>
+                    <img src="../shared/Screenshot_1.png" alt="uups" css="margin-left: 50px;">
+                </div>
+                <div class="e4">
+                    <p>
+                        padding: 20px;
+                        margin: 20px;
+                        background-color: cornsilk;
+                        border: 6px solid gold;
+                        width: 50%;
+                    </p>
+                </div>
+
+                <nav>
+                    <a href="#toc">Go to Table of content</a>
+                </nav>
+
+                <div class="e4">
+                    <a href="q1.html">nothing can help you to remember something more other then a good quiz!</a>
+                </div>
+
+            </div>
+
+
+
+        <script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
+        <script src="../shared/myscripts.js"></script>
+
+    </body>
+</html>

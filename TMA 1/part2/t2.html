@@ -2,8 +2,9 @@
 
 <html>
     <head>
-        <title>Assignment1 part 2</title>
+        <title>Tutorial for unit 2</title>
         <link rel="stylesheet" type="text/css" href="../shared/mystyle.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     </head>
 
     <body>
@@ -30,10 +31,208 @@
                 </div>
             </div>
         </div>
-        <h1>Greetings!</h1>
-        <p>this is the simple website to help you learn the basic of the web dev</p>
-        <p>you can click on the navigation bars to go to different sections of the tutorials</p>
+        <h1>Unit 2 - Javascript</h1>
+        <div class="general">
 
+            <h2><a id="toc">Table of content</h2>
+            <ul>
+                <li><a href="#js1">JavaScript Array</a></li>
+                <li><a href="#js2">JavaScript Date</a></li>
+            </ul>
+
+            <h2>Introduction to scripting</h2>
+            <div class="tutorial-content">
+                <p> JavaScript is the programming language of HTML and the Web. </p>
+                <p> I'll give some examples of Array and Date elements. And here is how client
+                    site script code looks like </p>
+                <button type="button" class="collapsible">Example</button>
+                <div class="tutorial-example" >
+                    <div class="w3-code notranslate jsHigh">
+                        document.getElementById("demo").innerHTML = "Hello JavaScript";
+                    </div>
+                </div>
+            </div>
+
+            <h2><a id="js1"></a>JavaScript Array</h2>
+            <div class="tutorial-content">
+                <p>JavaScript arrays are used to store multiple values in a single variable.</p>
+                <button type="button" class="collapsible">Example</button>
+                <div class="tutorial-example" >
+                    <div class="w3-code notranslate jsHigh">
+                        var cars = ["Saab", "Volvo", "BMW"];
+                    </div>
+                </div>
+                <hr>
+                <p>The JavaScript method toString() converts an array to a string of
+                    (comma separated) array values.</p>
+                <button type="button" class="collapsible">Example</button>
+                <div class="tutorial-example" >
+                    <div class="w3-code notranslate jsHigh">
+                        var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                        document.getElementById("demo").innerHTML = fruits.toString();
+                    </div>
+                    <p>Result:</p>
+                    <div class="w3-white w3-padding notranslate">
+                        Banana,Orange,Apple,Mango
+                    </div>
+                </div>
+
+                <hr>
+                <p>The join() method also joins all array elements into a string.<br>
+                    It behaves just like toString(), but in addition you can specify the separator:</p>
+                <button type="button" class="collapsible">Example</button>
+                <div class="tutorial-example" >
+                    <div class="w3-code notranslate jsHigh">
+                        var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                        document.getElementById("demo").innerHTML = fruits.join(" * ");
+                    </div>
+                    <p>Result:</p>
+                    <div class="w3-white w3-padding notranslate">
+                        Banana * Orange * Apple * Mango
+                    </div>
+                </div>
+
+                <hr>
+                <p> The pop() method removes the last element from an array,<br>
+                    it also returns the value of popped element: </p>
+                <button type="button" class="collapsible">Example</button>
+                <div class="tutorial-example" >
+                    <div class="w3-code notranslate jsHigh">
+                        var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                        fruits.pop();              // Removes the last element ("Mango") from fruits<br>
+                        var x = fruits.pop();      // the value of x is "Mango"<br>
+                    </div>
+                </div>
+
+                <hr>
+                <p>The push() method adds a new element to an array (at the end),<br>
+                    Also push() returns the new length of the array:</p>
+                <button type="button" class="collapsible">Example</button>
+                <div class="tutorial-example" >
+                    <div class="w3-code notranslate jsHigh">
+                        var fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+                        fruits.push("Kiwi");       //  Adds a new element ("Kiwi") to fruits<br>
+                        var x = fruits.push("Kiwi");   //  the value of x is 5
+                    </div>
+                </div>
+
+                <hr>
+                <p>There are many more different functions in JS, so to learn all of them, you
+                    can try to visit webisite <a href=https://www.w3schools.com/js/js_arrays.asp>w3schools</a>
+                     to learn more anout arrays</p>
+
+                <nav>
+                    <a href="#toc">Go to Table of content</a>
+                </nav>
+
+            </div>
+
+            <h2><a id="js2"></a>JavaScript Date</h2>
+            <div class="tutorial-content">
+                <p>Another very important aspect of web-page is date, so JS can dynamycally access different date objects and display them</p>
+                <p id="para1" class="box"></p>
+
+                <p>The first step is to create date object</p>
+                <button type="button" class="collapsible">Example</button>
+                <div class="tutorial-example" >
+                    <div class="w3-code notranslate jsHigh">
+                        new Date()<br>
+                        new Date(year, month, day, hours, minutes, seconds, milliseconds)<br>
+                        new Date(milliseconds)<br>
+                        new Date(date string)
+                    </div>
+                </div>
+
+                <hr>
+                <p>new Date() creates a new date object with the <b>current date and time</b>: </p>
+                <button type="button" class="collapsible">Example</button>
+                <div class="tutorial-example" >
+                    <div class="w3-code notranslate jsHigh">
+                        var d = new Date();
+                    </div>
+                </div>
+
+                <hr>
+                <p>new Date(year, month, ...) creates a new date object with a <b>specified date and time</b>.</p>
+                <button type="button" class="collapsible">Example</button>
+                <div class="tutorial-example" >
+                    <div class="w3-code notranslate jsHigh">
+                        //7 numbers specify year, month, day, hour,  minute, second, and millisecond (in that order):<br>
+                        var d = new Date(2018, 11, 24, 10, 33, 30, 0); //JavaScript counts months from 0 to 11.<br>
+                        //6 numbers specify year, month, day, hour, minute, second: etc<br>
+                        var d = new Date(2018, 11, 24, 10, 33, 30);<br>
+                    </div>
+                </div>
+
+                <hr>
+                <p>new Date(dateString) creates a new date object from a <b>date string</b>:</p>
+                <button type="button" class="collapsible">Example</button>
+                <div class="tutorial-example" >
+                    <div class="w3-code notranslate jsHigh">
+                        var d = new Date("October 13, 2014 11:13:00");
+                    </div>
+                    <div class="panel">
+                        <p>In order to have more understanding about <b>date stirng</b>, please visit <a href="https://www.w3schools.com/js/js_date_formats.asp">w3school</a></p>
+                    </div>
+                </div>
+
+                <hr>
+                <p> new Date(milliseconds) creates a new date object as <b>zero time plus milliseconds</b>, eg<br>
+                    01 January 1970 plus 100 000 000 000 milliseconds is approximately 03 March 1973:</p>
+                <button type="button" class="collapsible">Example</button>
+                <div class="tutorial-example" >
+                    <div class="w3-code notranslate jsHigh">
+                        var d = new Date(100000000000);
+                    </div>
+                </div>
+
+                <nav>
+                    <a href="#toc">Go to Table of content</a>
+                </nav>
+
+            </div>
+            <div class="e4">
+                <a href="q2.html">nothing can help you to remember something more other then a good quiz!</a>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
+        <script src="../shared/myscripts.js"></script>
 
     </body>
 </html>

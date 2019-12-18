@@ -2,8 +2,9 @@
 
 <html>
     <head>
-        <title>Assignment1 part 2</title>
-        <link rel="stylesheet" type="text/css" href="../shared/mystyle.css">
+        <title>Tutorial for unit 3</title>
+        <link rel="stylesheet" href="../shared/mystyle.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     </head>
 
     <body>
@@ -30,10 +31,78 @@
                 </div>
             </div>
         </div>
-        <h1>Greetings!</h1>
-        <p>this is the simple website to help you learn the basic of the web dev</p>
-        <p>you can click on the navigation bars to go to different sections of the tutorials</p>
+        <h1>Unit 3 - AJAX and HTML!</h1>
+        <div class="general">
 
+            <h2><a id="toc">Table of content</h2>
+            <ul>
+                <li><a href="#ajax1">Introduction to AJAX</a></li>
+                <li><a href="#ajax2">JavaScript Date</a></li>
+            </ul>
+
+            <h2><a id="ajax1"></a>Introduction to AJAX</h2>
+            <div class="tutorial-content">
+                <p>AJAX can be used for interactive communication with an XML file.</p>
+                <p>The following example will demonstrate how a web page can fetch information from an XML file with AJAX:</p>
+
+                <button type="button" onclick="loadDoc()">Get my skill list</button>
+                <br><br>
+                <table id="demo"></table>
+
+                <hr>
+                <h3>Explanation of example</h3>
+                <p>When a user clicks on the "Get my skill list" button above, the loadDoc() function is executed.<br>
+                    The loadDoc() function creates an XMLHttpRequest object, adds the function to be executed when the server response is ready, and sends the request off to the server.
+                    <br>
+                    When the server response is ready, an HTML table is built, nodes (elements) are extracted from the XML file, and it finally updates the element "demo" with the HTML table filled with XML data:
+                </p>
+                <button type="button" class="collapsible">JS code</button>
+                <div class="tutorial-example" >
+                    <div class="w3-code notranslate jsHigh">
+                        function loadDoc() {<br>
+                          &nbsp;&nbsp;var xhttp = new XMLHttpRequest();<br>
+                          &nbsp;&nbsp;xhttp.onreadystatechange = function() {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;if (this.readyState == 4 && this.status == 200) {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;myFunction(this);<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                          &nbsp;&nbsp;};<br>
+                          &nbsp;&nbsp;xhttp.open("GET", "cd_catalog.xml", true);<br>
+                          &nbsp;&nbsp;xhttp.send();<br>
+                        }<br>
+                        function myFunction(xml) {<br>
+                          &nbsp;&nbsp;var i;<br>
+                          &nbsp;&nbsp;var xmlDoc = xml.responseXML;<br>
+                          &nbsp;&nbsp;var table="<tr><th>Title</th><th>Artist</th></tr>";<br>
+                          &nbsp;&nbsp;var x = xmlDoc.getElementsByTagName("CD");<br>
+                          &nbsp;&nbsp;for (i = 0; i &lt x.length; i++) {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;table += "<tr><td>" +<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;"</td><td>" +<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;"</td></tr>";<br>
+                          &nbsp;&nbsp;}<br>
+                          &nbsp;&nbsp;document.getElementById("demo").innerHTML = table;
+                        }<br>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <hr>
+
+
+
+
+
+
+
+        </div>
+
+
+
+        <script src="https://www.w3schools.com/lib/w3codecolor.js "></script>
+        <script src="../shared/myscripts.js"></script>
 
     </body>
 </html>

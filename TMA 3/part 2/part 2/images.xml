@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<collection>
+    <image>
+      <path>~/Images/1.jpg</path>
+      <description>mashroom</description>
+    </image>
+
+    <image>
+      <path>~/Images/2.jpg</path>
+      <description>butterfly</description>
+    </image>
+
+    <image>
+      <path>~/Images/3.jpg</path>
+      <description>cloud</description>
+    </image>
+
+    <image>
+      <path>~/Images/4.jpg</path>
+      <description>bar</description>
+    </image>
+
+    <image>
+      <path>~/Images/5.jpg</path>
+      <description>dog</description>
+    </image>
+
+    <image>
+      <path>~/Images/6.jpg</path>
+      <description>moon</description>
+    </image>
+
+    <image>
+      <path>~/Images/7.jpg</path>
+      <description>cosmos</description>
+    </image>
+
+  <image>
+    <path>~/Images/8.jpg</path>
+    <description>star</description>
+  </image>
+
+  <image>
+    <path>~/Images/9.jpg</path>
+    <description>bar2</description>
+  </image>
+
+  <image>
+    <path>~/Images/10.jpg</path>
+    <description>god</description>
+  </image>
+
+  <image>
+    <path>~/Images/11.jpg</path>
+    <description>northen light</description>
+  </image>
+
+  <image>
+    <path>~/Images/12.jpg</path>
+    <description>drawing</description>
+  </image>
+
+  <image>
+    <path>~/Images/13.jpg</path>
+    <description>dog2</description>
+  </image>
+
+  <image>
+    <path>~/Images/14.jpg</path>
+    <description>butterfly2</description>
+  </image>
+
+  <image>
+    <path>~/Images/15.jpg</path>
+    <description>sunrise</description>
+  </image>
+
+  <image>
+    <path>~/Images/16.jpg</path>
+    <description>cat</description>
+  </image>
+
+  <image>
+    <path>~/Images/17.jpg</path>
+    <description>snow</description>
+  </image>
+  
+  <image>
+    <path>~/Images/18.jpg</path>
+    <description>guitar</description>
+  </image>
+
+  <image>
+    <path>~/Images/19.jpg</path>
+    <description>rabbit</description>
+  </image>
+
+  <image>
+    <path>~/Images/20.jpg</path>
+    <description>dog3</description>
+  </image>
+
+  <image>
+    <path>~/Images/21.jpg</path>
+    <description>dog4</description>
+  </image>
+
+  <image>
+    <path>~/Images/22.jpg</path>
+    <description>star2</description>
+  </image>
+
+  <image>
+    <path>~/Images/23.jpg</path>
+    <description>northen light 2</description>
+  </image>
+</collection>

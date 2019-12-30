@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>Assignment1 part 2</title>
+        <title>Quiz 1</title>
         <link rel="stylesheet" type="text/css" href="../shared/mystyle.css">
     </head>
 
@@ -24,9 +24,9 @@
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                    <a href="q1.html">Unit 1</a>
-                    <a href="q2.html">Unit 2</a>
-                    <a href="q3.html">Unit 3</a>
+                    <a href="q1.html">Quiz 1</a>
+                    <a href="q2.html">Quiz 2</a>
+                    <a href="q3.html">Quiz 3</a>
                 </div>
             </div>
         </div>
@@ -35,13 +35,17 @@
         <button id="submit">Submit Quiz</button>
         <div id="results"></div>
 
-
         <form id="form" onsubmit="return false;">
-            <input type="text" id="question" />
-            <input type="text" id="answer_a" />
-            <input type="text" id="answer_b" />
-            <input type="text" id="answer_c" />
-            <input type="text" id="correct_answer" />
+			To add more questions please enter the question: <br>
+            <input type="text" id="question" /><br>
+			Enter answer a: <br>
+            <input type="text" id="answer_a" /><br>
+			Enter answer b: <br>
+            <input type="text" id="answer_b" /><br>
+			Enter answer c: <br>
+            <input type="text" id="answer_c" /><br>
+			Enter the correct answer "a", "b" or "c": <br>
+            <input type="text" id="correct_answer" /><br><br>
             <input type="submit" onclick="othername();" />
         </form>
 

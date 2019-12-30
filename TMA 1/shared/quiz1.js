@@ -1,35 +1,10 @@
-myQuestions = [
-  {
-    question: "Who is the strongest?",
-    answers: {
-      a: "Superman",
-      b: "The Terminator",
-      c: "Waluigi, obviously"
-    },
-    correctAnswer: "c"
-  },
-  {
-    question: "What is the best site ever created?",
-    answers: {
-      a: "SitePoint",
-      b: "Simple Steps Code",
-      c: "Trick question; they're both the best"
-    },
-    correctAnswer: "c"
-  },
-  {
-    question: "Where is Waldo really?",
-    answers: {
-      a: "Antarctica",
-      b: "Exploring the Pacific Ocean",
-      c: "Sitting in a tree",
-      d: "Minding his own business, so stop asking"
-    },
-    correctAnswer: "d"
-  }
-];
+var myQuestions = [];
+var json_str = {};
+var json_str1 = {};
 
 function buildQuiz() {
+	json_str = window.localStorage.getItem('questions');
+	myQuestions = JSON.parse(json_str);
 // we'll need a place to store the HTML output
 const output = [];
 
@@ -53,7 +28,7 @@ myQuestions.forEach((currentQuestion, questionNumber) => {
   // add this question and its answers to the output
   output.push(
     `<div class="question"> ${currentQuestion.question} </div>
-    <div class="answers"> ${answers.join("")} </div>`
+    <div class="answers"> ${answers.join("")}`
   );
 });
 
@@ -103,13 +78,14 @@ buildQuiz();
 // on submit, show results
 submitButton.addEventListener("click", showResults);
 
-
 function othername() {
-    var q = document.getElementById("question").value;
-    var aa = document.getElementById("answer_a").value;
-    var ab = document.getElementById("answer_b").value;
-    var ac = document.getElementById("answer_c").value;
-    var ca = document.getElementById("correct_answer").value;
-    myQuestions.push({question: q, answers: {a: aa, b: ab, c: ac}, correctAnswer: ca});
+	myQuestions = [];
+    myQuestions.push({question: document.getElementById("question").value, 
+					answers: {a: document.getElementById("answer_a").value, 
+					b: document.getElementById("answer_b").value, 
+					c: document.getElementById("answer_c").value}, 
+					correctAnswer: document.getElementById("correct_answer").value});
+	json_str1 = JSON.stringify(myQuestions);
+	window.localStorage.setItem('questions', json_str1);
     buildQuiz();
 }
